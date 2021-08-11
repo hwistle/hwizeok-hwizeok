@@ -7,13 +7,6 @@
     body {
       margin:0px;
     }
-    #hwi {
-      text-decoration-line: underline;
-      color:mediumseagreen;
-    }
-    .saw {
-      color:gray;
-    }
     a {
       text-decoration-line: none;
       color:black;
@@ -25,30 +18,41 @@
       margin:0px;
       height:78px;
     }
-    ol {
+    h2 {
+      text-align:center;
+    }
+    #grid ol {
       border-right:1px solid gray;
       width:50px;
       margin: 0px;
       padding-top:20px;
       padding-right:20px;
     }
+    #grid {
+      display:grid;
+      grid-template-columns:140px 1fr;
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html" title="휘적휘적"><font color="mediumseagreen">휘적휘적</font></a></h1>
-  <ol>
-    <li><a href="1.html" title="독후감" class="saw">독후감</a></li>
-    <li><a href="2.html" title="시" class="saw" id="hwi">시</a></li>
-    <li><a href="3.html" title="소설">소설</a></li>
-  </ol>
-  <h2>시</h2>
-  <img src="별.jpg" width="350">
-  <p><strong>별</strong><br></p>
-  <p>흩어진 기억이 옹기종기 모여 글자가 되는<br>나의 소박한 새벽</p>
-  <p>희미한 기억이 살며시 잉크가 되어 번지는<br>나의 소박한 새벽</p>
-  <p>기어코 새벽을 채운<br>못난 내 글씨들은<br>잠시 종이에 머물고는<br>별들처럼 아득히 멀어진다</p>
-  <p>어릴 적 혹여나 별이 쏟아져 내릴까 썼던 우산도<br>별에 예쁜 이름을 적어주려 들었던 연필도<br>별똥별을 잡겠다며 휘둘렀던 잠자리채도<br>별들처럼 아득히 멀어진다</p>
-  <p>멀어지지만 빛난다<br>그럼에도 멀어진다</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" title="독후감" >독후감</a></li>
+      <li><a href="2.html" title="시">시</a></li>
+      <li><a href="3.html" title="소설">소설</a></li>
+    </ol>
+    <div>
+      <h2>시</h2>
+      <img src="별.jpg" width="200">
+      <p><strong>별</strong><br></p>
+      <p>흩어진 기억이 옹기종기 모여 글자가 되는<br>나의 소박한 새벽</p>
+      <p>희미한 기억이 살며시 잉크가 되어 번지는<br>나의 소박한 새벽</p>
+      <p>기어코 새벽을 채운<br>못난 내 글씨들은<br>잠시 종이에 머물고는<br>별들처럼 아득히 멀어진다</p>
+      <p>어릴 적 혹여나 별이 쏟아져 내릴까 썼던 우산도<br>별에 예쁜 이름을 적어주려 들었던 연필도<br>별똥별을 잡겠다며 휘둘렀던 잠자리채도<br>별들처럼 아득히 멀어진다</p>
+      <p>멀어지지만 빛난다<br>그럼에도 멀어진다</p>
+    </div>
+  </div>
   <div id="disqus_thread"></div>
   <script>
       /**
