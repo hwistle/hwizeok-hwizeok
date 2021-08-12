@@ -4,27 +4,68 @@
   <title>휘적휘적 - 어서오세요</title>
   <meta charset="utf-8">
   <style>
+    body {
+      margin:0px;
+    }
     a {
       text-decoration-line: none;
       color:black;
     }
     h1 {
-      font-size:50px; text-align: center;
+      font-size:50px; 
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin:0px;
+      height:78px;
+    }
+    #grid {
+      display:grid;
+      grid-template-columns:140px 1fr;
+    }
+    #grid ol {
+      border-right:1px solid gray;
+      width:50px;
+      margin: 0px;
+      padding-top:20px;
+      padding-right:20px;
+    }
+    #grid div {
+      padding-top:150px;
+      padding-right:150px;
+      padding-bottom:200px;
+      text-align: center
+    }
+    @media(max-width:800px) {
+      #grid {
+      display:block;
+      }
+      #grid div {
+      padding-left:20px;
+      border-top:1px solid gray
+      }
+      #grid ol {
+       border-right:none;
+       padding-bottom:33px;
+      }
+      #grid div {
+       padding-right:0px;
     }
   </style>
 </head>
 <body>
   <h1><a href="index.html" title="휘적휘적"><font color="mediumseagreen">휘적휘적</font></a></h1>
-  <ol>
-    <li><a href="1.html" title="독후감">독후감</a></li>
-    <li><a href="2.html" title="시">시</a></li>
-    <li><a hsref="3.html" title="소설">소설</a></li>
-  </ol>
-  <img src="연필.jpg" width="350">
-  <h2>휘적휘적</h2>
-  <p>지극히 <u>개인적인</u>, 지극히 <u>사소한</u> 이야기들</p>
-  <br><iframe width="560" height="315" src="https://www.youtube.com/embed/YVxCFGv9Eqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br><br>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" title="독후감">독후감</a></li>
+      <li><a href="2.html" title="시">시</a></li>
+      <li><a href="3.html" title="소설">소설</a></li>
+    </ol>
+    <div>
+      <h2>이것저것 적는 곳</h2>
+      <p>지극히 <u>개인적인</u>, 지극히 <u>사소한</u> 이야기들</p>
+      <img src="연필.jpg" width="300">
+    </div>
+  </div>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
