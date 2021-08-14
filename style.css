@@ -8,12 +8,12 @@ body {
   h1 {
     font-size:50px;
     text-align:center;
-    border-bottom:1px solid gray;
+    border-bottom:4px solid lightgray;
     margin:0px;
     height:78px;
   }
   h2 {
-    border-bottom:1px solid gray;
+    border-bottom:3px solid lightgray;
     margin-top:30px;
     margin-bottom:30px;
   }
@@ -22,7 +22,7 @@ body {
     grid-template-columns:140px 1fr;
   }
   #grid ol {
-    border-right:1px solid gray;
+    border-right:4px solid lightgray;
     width:50px;
     margin: 0px;
     padding-top:20px;
@@ -32,18 +32,23 @@ body {
     padding-left:20px;
     padding-right:30px;
   }
+  #lobby {
+    display: inline;
+    float: right;
+    margin-right:20px;
+    font-weight:bold;
+    border-bottom:4px solid lightgray;
+  }
+
   @media(max-width:800px) {
     #grid {
     display:block;
     }
     #grid div {
     padding-left:20px;
-    border-top:1px solid gray
+    border-top:3px solid lightgray;
     }
     #grid ol {
      border-right:none;
      padding-bottom:33px;
-    }
-    #disqus {
-      width:500px
     }
