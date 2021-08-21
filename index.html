@@ -38,6 +38,9 @@
       padding-bottom:21.4vh;
       text-align: center
     }
+    input {
+
+    }
     @media(max-width:800px) {
       #grid {
       display:block;
@@ -57,6 +60,12 @@
 </head>
 <body>
   <a href="index.html" title="휘적휘적"><h1>휘적휘적</h1></a>
+      <input type="button" value="white" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      ">
+      <input type="button" value="beige" onclick="
+      document.querySelector('body').style.backgroundColor = '#f8efe2';
+      ">
   <div id="grid">
     <ol>
       <li><a href="1 lobby.html" title="독후감">독후감</a></li>
