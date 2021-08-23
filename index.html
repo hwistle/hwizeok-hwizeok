@@ -59,13 +59,17 @@
   </style>
 </head>
 <body>
-  <a href="index.html" title="휘적휘적"><h1>휘적휘적</h1></a>
       <input type="button" value="white" onclick="
-      document.querySelector('body').style.backgroundColor = 'white';
+      var target = document.querySelector('body');
+      if( this.value === 'white'){
+        target.style.backgroundColor = 'white';
+        this.value = 'beige';
+      } else { 
+        target.style.backgroundColor = '#f8efe2';
+        this.value = 'white';
+        } 
       ">
-      <input type="button" value="beige" onclick="
-      document.querySelector('body').style.backgroundColor = '#f8efe2';
-      ">
+  <a href="index.html" title="휘적휘적"><h1>휘적휘적</h1></a>
   <div id="grid">
     <ol>
       <li><a href="1 lobby.html" title="독후감">독후감</a></li>
