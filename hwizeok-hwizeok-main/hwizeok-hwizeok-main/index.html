@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>휘적휘적 - 어서오세요</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin-bottom:3vh;
+      border-bottom:2px solid lightgray;
+      background-color: #f8efe2;
+    }
+    h1 {
+      font-size:50px;
+      text-align:center;
+      border-bottom:2px solid lightgray;
+      margin:0px;
+      height:78px;
+    }
+    a {
+      text-decoration-line: none;
+      color:black;
+    }
+    #grid {
+      display:grid;
+      grid-template-columns:140px 1fr;
+    }
+    #grid ol {
+      border-right:2px solid lightgray;
+      width:50px;
+      margin: 0px;
+      padding-top:20px;
+      padding-right:20px;
+      line-height: 1.7em;
+    }
+    #grid div {
+      padding-top:150px;
+      padding-right:150px;
+      padding-bottom:21.4vh;
+      text-align: center
+    }
+    input {
+
+    }
+    @media(max-width:800px) {
+      #grid {
+      display:block;
+      }
+      #grid div {
+      padding-left:20px;
+      border-top:2px solid lightgray;
+      }
+      #grid ol {
+       border-right:none;
+       padding-bottom:33px;
+      }
+      #grid div {
+       padding-right:0px;
+    }
+  </style>
+</head>
+<body onload="alert('어서오세요!')">
+  <input type="button" value="white" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+  ">
+  <input type="button" value="beige" onclick="
+    document.querySelector('body').style.backgroundColor='#f8efe2';
+  ">
+  <a href="index.html" title="휘적휘적"><h1>휘적휘적</h1></a>
+  <div id="grid">
+    <ol>
+      <li><a href="1 lobby.html" title="독후감">독후감</a></li>
+      <li><a href="2.html" title="시">시</a></li>
+      <li><a href="3 lobby.html" title="소설">소설</a></li>
+    </ol>
+    <div>
+      <h2>이것저것 적는 곳</h2>
+      <p>지극히 <u>개인적인</u>, 지극히 <u>사소한</u> 이야기들</p>
+      <img src="연필.jpg" width="350">
+    </div>
+  </div>
+</body>
+</html>
